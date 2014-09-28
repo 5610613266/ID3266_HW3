@@ -11,7 +11,7 @@ package matrix;
  * @author ACER
  */
 import java.util.Scanner;
-public class ComplexMatrix extends Matrix{
+public class ComplexMatrix extends Matrix {
 
     
     private ComplexNumber Matrix[][];
@@ -38,7 +38,7 @@ public class ComplexMatrix extends Matrix{
         ComplexMatrix c = new ComplexMatrix();
         for (int i = 0 ; i < a.SIZE ; i++) {
             for (int j = 0 ; j < a.SIZE ; j++) {
-                c.Matrix[i][j] = ComplexNumber().add(a.Matrix[i][j], b.Matrix[i][j]);
+                c.Matrix[i][j] = ComplexNumber.add(a.Matrix[i][j], b.Matrix[i][j]);
             }
         }
         return c;
@@ -48,7 +48,7 @@ public class ComplexMatrix extends Matrix{
         ComplexMatrix d = new ComplexMatrix();
         for (int i = 0 ; i < a.SIZE ; i++) {
             for (int j = 0 ; j < a.SIZE ; j++) {
-                d.Matrix[i][j] = ComplexNumber().substract(a.Matrix[i][j], b.Matrix[i][j]);
+                d.Matrix[i][j] = ComplexNumber.substract(a.Matrix[i][j], b.Matrix[i][j]);
             }
         }
         return d;
@@ -59,7 +59,7 @@ public class ComplexMatrix extends Matrix{
         for (int i = 0 ; i < a.SIZE ; i++) {
             for (int j = 0 ; j < a.SIZE ; j++) {
                 for (int k = 0 ; k < a.SIZE ; k++){
-                    e.Matrix[i][j] = ComplexNumber().add(e.Matrix[i][j], ComplexNumber().multiply(a.Matrix[i][k], b.Matrix[k][j]));
+                    e.Matrix[i][j] = ComplexNumber.add(e.Matrix[i][j], ComplexNumber().multiply(a.Matrix[i][k], b.Matrix[k][j]));
                 }                
             }
         }
