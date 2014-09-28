@@ -59,7 +59,7 @@ public class ComplexMatrix extends Matrix {
         for (int i = 0 ; i < a.SIZE ; i++) {
             for (int j = 0 ; j < a.SIZE ; j++) {
                 for (int k = 0 ; k < a.SIZE ; k++){
-                    e.Matrix[i][j] = ComplexNumber.add(e.Matrix[i][j], ComplexNumber().multiply(a.Matrix[i][k], b.Matrix[k][j]));
+                    e.Matrix[i][j] = ComplexNumber.add(e.Matrix[i][j], ComplexNumber.multiply(a.Matrix[i][k], b.Matrix[k][j]));
                 }                
             }
         }
