@@ -10,6 +10,7 @@ package matrix;
  *
  * @author ACER
  */
+import java.util.Scanner;
 public class ComplexNumber {
     
     private int x;
@@ -31,6 +32,18 @@ public class ComplexNumber {
     
     public int getImaginaryPart(){
         return y;
+    }
+    
+    public void setRealPart() {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter real part: ");
+        this.x = scan.nextInt();   
+    }
+
+    public void setImaginaryPart() {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter immagintion part: ");
+        this.y = scan.nextInt();
     }
     
     public ComplexNumber add(ComplexNumber p){
